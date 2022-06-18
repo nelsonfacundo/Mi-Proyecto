@@ -1,0 +1,213 @@
+
+body{
+    margin: 0;
+    background-image: url("/Public/img/fondo.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+header{
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    /*background-color: red; */
+    display: flex;
+}
+ 
+
+.logo{
+    margin-top: 5px;
+    width: 80%;
+}
+
+.logo img{
+    height: 60px;
+    width: 60px;
+    margin-left: 25%;
+    border-radius: 150px;
+}
+
+.barraDeNavegacion{
+    width: 100%;
+    margin: 0;
+    border-color: black;
+}
+
+
+.barraDeNavegacion  p{
+    display: flex;
+    border-color: black;
+}
+
+.barraDeNavegacion  input{
+    width: 90%;
+    height: 30px;
+}
+
+.barraDeNavegacion button img{
+    height: 15px;
+    border-radius: 150px;
+    background-image: none;
+}
+ 
+
+.nav  {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.nav  a {
+    float: right;
+    padding-right: 50px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+ 
+}
+
+.main{
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.main .titulo {
+    width: 100%;
+}
+ .main  .titulo h1{
+    font-size: 50px;
+    font-family: grendel;
+    text-align: center;
+    color: white;
+ }
+
+ /* menu */
+
+
+
+#menu{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+   
+   }
+   
+   /* items del menu */
+   
+   #menu ul #menu-li {
+    width: auto;
+   }
+   
+   /* enlaces del menu */
+   
+   #menu ul a {
+    color:  white;
+    display:block;
+    text-decoration:none;
+    font-size:15px;
+    padding:10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin: 0;
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+   #menu ul li:hover {
+    background: linear-gradient(to top, #18829E, #8DACB4);
+    margin: 0;
+   }
+
+ /* menu desplegable */
+
+#menu ul ul {
+    background-color: #18829E;
+    display:none;
+    position:absolute;
+    margin: 0;
+   }
+   
+   /* items del menu desplegable */
+   
+   #menu ul ul li {
+    width:auto;
+    margin: 0;
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+   #menu ul ul a {
+    margin: 0;
+    justify-content: center;
+   }
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+   #menu ul li:hover > ul {
+    display: block;
+    z-index: 100;
+   }
+   
+ 
+
+
+
+/*<-----BANNER ----->*/
+
+ .main .banner{
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+    border: solid 1px black;
+ }
+
+
+
+ @keyframes banner {
+    0%,30%{
+      background-image: url("/Public/img/adidas-oferta.jpeg");
+      opacity: 1;
+    }
+    31%,34%{
+      opacity: 0.1;
+    }
+  35%,65%{
+      background-image: url("/Public/img/perfumes-ofertas.webp");
+      opacity: 1;
+    }
+    66%,69%{
+      opacity: 0.1;
+    }
+    70%,100%{
+      background-image: url("/Public/img/samsung-oferta.webp");
+      opacity: 1;
+    }
+
+  }
+
+
+
+    
+
+
+
